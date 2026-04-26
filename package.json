@@ -1,0 +1,28 @@
+{
+  "name": "bloxdranks",
+  "version": "1.0.0",
+  "description": "A Discord Bot for BloxdRanks",
+  "main": "index.js",
+  "author": "Friday",
+  "license": "All Rights Reserved",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.0.0",
+    "discord.js": "^14.26.3",
+    "dotenv": "^16.6.1",
+    "fs": "0.0.1-security",
+    "luxon": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoChillYT/BloxdRanks.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NoChillYT/BloxdRanks/issues"
+  },
+  "homepage": "https://github.com/NoChillYT/BloxdRanks#readme"
+}
