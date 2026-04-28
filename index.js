@@ -64,6 +64,18 @@ client.on('interactionCreate', async interaction => {
 
     if (!command) return;
 
+    // Permission check
+    const STAFF_ROLE_ID = '1361310506232578128';
+    const PUBLIC_COMMANDS = ['report', 'help'];
+    
+    const hasStaffRole = interaction.member.roles.cache.has(STAFF_ROLE_ID);
+    const isPublicCommand = PUBLIC_COMMANDS.includes(interaction.commandName);
+    
+    if (!hasStaffRole && !isPublicCommand) {
+        await interaction.reply({ content: 'You do not have permission to use this command.', ephemeral: true });
+        return;
+    }
+
     try {
         await command.execute(interaction);
     } catch (error) {
