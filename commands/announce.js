@@ -31,7 +31,7 @@ module.exports = {
             .setDescription(message)
             .setAuthor({ name: interaction.user.username, iconURL: interaction.user.displayAvatarURL() })
             .setTimestamp()
-            .setFooter({ text: 'BloxdRanks Announcement' });
+            .setFooter({ text: 'Bloxd Military Announcement' });
 
         // Send the announcement
         try {
